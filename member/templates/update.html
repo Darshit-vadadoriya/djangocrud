@@ -1,0 +1,9 @@
+<h1>Members</h1>
+<form action="updaterecord/{{dkmember.id}}" method="post">
+    {% csrf_token %}
+First Name <input type="text" name="fnm1" value="{{dkmember.firstname}}">
+<br>
+Last Name <input type="text" name="lnm1" value="{{dkmember.lastname}}">
+<br>
+<input type="submit" value="uPDATE">
+</form>
